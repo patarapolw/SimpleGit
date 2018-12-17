@@ -40,7 +40,7 @@ git remote set-url origin https://github.com/foo/bar.git
 - Merging and solving conflicts can be a little complex. Easier actions are pushing and pulling. (Push: local->remote, Pull: remote->local).
 
 ```commandline
-git push origin master
+git push -u origin master
 git pull origin master
 ```
 
