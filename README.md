@@ -74,6 +74,14 @@ git checkout <branch-name>
 
 Put the filenames you want to ignore in `.gitignore`.
 
+## Update Git based on Gitignore
+
+See <https://stackoverflow.com/questions/1143796/remove-a-file-from-a-git-repository-without-deleting-it-from-the-local-filesyste>
+
+```
+git rm --cached `git ls-files -i -X .gitignore`
+```
+
 ## Some possible serious mistakes
 
 ### Mistakenly `commit` large or unwanted files
